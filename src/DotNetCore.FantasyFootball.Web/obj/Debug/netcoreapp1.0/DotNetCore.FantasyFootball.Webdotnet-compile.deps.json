@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v1.0/",
-    "signature": "4b8655d496f3da91a62bc1d86f523aea30400909"
+    "signature": "f176cfc31fb51fcd365e657ff560bfef86f321d0"
   },
   "compilationOptions": {
     "defines": [
@@ -34,6 +34,22 @@
         },
         "compile": {
           "DotNetCore.FantasyFootball.Web.dll": {}
+        }
+      },
+      "HtmlAgilityPack.NetCore/1.5.0.1": {
+        "dependencies": {
+          "System.Collections": "4.0.11",
+          "System.Diagnostics.Debug": "4.0.11",
+          "System.Linq": "4.1.0",
+          "System.Runtime": "4.1.0",
+          "System.Runtime.Extensions": "4.1.0",
+          "System.Runtime.InteropServices": "4.1.0",
+          "System.Text.RegularExpressions": "4.1.0",
+          "System.Threading": "4.0.11",
+          "System.Xml.XPath": "4.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.3/HtmlAgilityPack.NetCore.dll": {}
         }
       },
       "Libuv/1.9.0": {
@@ -2550,6 +2566,9 @@
           "System.Runtime.Extensions": "4.1.0",
           "System.Threading": "4.0.11",
           "System.Xml.ReaderWriter": "4.0.11"
+        },
+        "compile": {
+          "ref/netstandard1.3/System.Xml.XPath.dll": {}
         }
       },
       "System.Xml.XPath.XDocument/4.0.1": {
@@ -2567,6 +2586,7 @@
       },
       "DotNetCore.FantasyFootball.Core/1.0.0": {
         "dependencies": {
+          "HtmlAgilityPack.NetCore": "1.5.0.1",
           "NETStandard.Library": "1.6.0"
         },
         "compile": {
@@ -2576,6 +2596,7 @@
       "DotNetCore.FantasyFootball.Parser/1.0.0": {
         "dependencies": {
           "DotNetCore.FantasyFootball.Core": "1.0.0",
+          "HtmlAgilityPack.NetCore": "1.5.0.1",
           "NETStandard.Library": "1.6.0"
         },
         "compile": {
@@ -2604,6 +2625,22 @@
         },
         "runtime": {
           "DotNetCore.FantasyFootball.Web.dll": {}
+        }
+      },
+      "HtmlAgilityPack.NetCore/1.5.0.1": {
+        "dependencies": {
+          "System.Collections": "4.0.11",
+          "System.Diagnostics.Debug": "4.0.11",
+          "System.Linq": "4.1.0",
+          "System.Runtime": "4.1.0",
+          "System.Runtime.Extensions": "4.1.0",
+          "System.Runtime.InteropServices": "4.1.0",
+          "System.Text.RegularExpressions": "4.1.0",
+          "System.Threading": "4.0.11",
+          "System.Xml.XPath": "4.0.1"
+        },
+        "runtime": {
+          "lib/netstandard1.3/HtmlAgilityPack.NetCore.dll": {}
         }
       },
       "Libuv/1.9.0": {
@@ -5047,6 +5084,7 @@
       },
       "DotNetCore.FantasyFootball.Core/1.0.0": {
         "dependencies": {
+          "HtmlAgilityPack.NetCore": "1.5.0.1",
           "NETStandard.Library": "1.6.0"
         },
         "runtime": {
@@ -5056,6 +5094,7 @@
       "DotNetCore.FantasyFootball.Parser/1.0.0": {
         "dependencies": {
           "DotNetCore.FantasyFootball.Core": "1.0.0",
+          "HtmlAgilityPack.NetCore": "1.5.0.1",
           "NETStandard.Library": "1.6.0"
         },
         "runtime": {
@@ -5069,6 +5108,11 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "HtmlAgilityPack.NetCore/1.5.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-N6FUlFbidfiWu1TcrNDQufaU5TbZ2RRn+kYHjwsLxcklQU8Cnmul+pTn2clKausZRHeFVxGp2ZECIWuDvot8Hg=="
     },
     "Libuv/1.9.0": {
       "type": "package",

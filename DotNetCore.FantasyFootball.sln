@@ -12,8 +12,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "DotNetCore.FantasyFootball.Core", "src\DotNetCore.FantasyFootball.Core\DotNetCore.FantasyFootball.Core.xproj", "{85DC1BA9-4EDF-44FE-BEEB-7587321FD6DD}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "DotNetCore.FantasyFootball.Parser", "src\DotNetCore.FantasyFootball.Parser\DotNetCore.FantasyFootball.Parser.xproj", "{B586FA60-6B6B-4D52-90EB-F0CF9B84B3B1}"
-EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "DotNetCore.FantasyFootball.Web", "src\DotNetCore.FantasyFootball.Web\DotNetCore.FantasyFootball.Web.xproj", "{1E8C721D-BFD3-4DBD-AE0C-8AEDF02FDF6E}"
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "DotNetCore.FantasyFootball.Tests", "test\DotNetCore.FantasyFootball.Tests\DotNetCore.FantasyFootball.Tests.xproj", "{4BE6B0EE-0DD5-45B3-965C-8AF1D18BE8B4}"
@@ -28,10 +26,6 @@ Global
 		{85DC1BA9-4EDF-44FE-BEEB-7587321FD6DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{85DC1BA9-4EDF-44FE-BEEB-7587321FD6DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{85DC1BA9-4EDF-44FE-BEEB-7587321FD6DD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B586FA60-6B6B-4D52-90EB-F0CF9B84B3B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B586FA60-6B6B-4D52-90EB-F0CF9B84B3B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B586FA60-6B6B-4D52-90EB-F0CF9B84B3B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B586FA60-6B6B-4D52-90EB-F0CF9B84B3B1}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1E8C721D-BFD3-4DBD-AE0C-8AEDF02FDF6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1E8C721D-BFD3-4DBD-AE0C-8AEDF02FDF6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1E8C721D-BFD3-4DBD-AE0C-8AEDF02FDF6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -46,7 +40,6 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{85DC1BA9-4EDF-44FE-BEEB-7587321FD6DD} = {D21C4011-A733-4269-B775-5080EF37EFA3}
-		{B586FA60-6B6B-4D52-90EB-F0CF9B84B3B1} = {D21C4011-A733-4269-B775-5080EF37EFA3}
 		{1E8C721D-BFD3-4DBD-AE0C-8AEDF02FDF6E} = {D21C4011-A733-4269-B775-5080EF37EFA3}
 	EndGlobalSection
 EndGlobal

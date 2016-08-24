@@ -8,7 +8,7 @@ namespace DotNetCore.FantasyFootball.Core.Models
     public class Player
     {
         public string Name { get; set; }
-        public string Rank { get; set; }
+        public int Rank { get; set; }
         public string Position { get; set; }
     }
 }

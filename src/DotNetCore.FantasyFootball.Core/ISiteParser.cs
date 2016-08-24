@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace DotNetCore.FantasyFootball.Core
 {
-    public interface IPageParser
+    public interface ISiteParser
     {
         void Parse();
     }

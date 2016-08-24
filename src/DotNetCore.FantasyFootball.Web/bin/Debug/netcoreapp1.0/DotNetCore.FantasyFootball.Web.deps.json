@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v1.0",
-    "signature": "c1ec4d228e256a305dcf098cfa396cc0f435d6a0"
+    "signature": "ad4811c665f4da05c37828eb9544e98fbaff3245"
   },
   "compilationOptions": {
     "defines": [
@@ -37,6 +37,25 @@
         },
         "compile": {
           "DotNetCore.FantasyFootball.Web.dll": {}
+        }
+      },
+      "HtmlAgilityPack.NetCore/1.5.0.1": {
+        "dependencies": {
+          "System.Collections": "4.0.11",
+          "System.Diagnostics.Debug": "4.0.11",
+          "System.Linq": "4.1.0",
+          "System.Runtime": "4.1.0",
+          "System.Runtime.Extensions": "4.1.0",
+          "System.Runtime.InteropServices": "4.1.0",
+          "System.Text.RegularExpressions": "4.1.0",
+          "System.Threading": "4.0.11",
+          "System.Xml.XPath": "4.0.1"
+        },
+        "runtime": {
+          "lib/netstandard1.3/HtmlAgilityPack.NetCore.dll": {}
+        },
+        "compile": {
+          "lib/netstandard1.3/HtmlAgilityPack.NetCore.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/1.0.0": {
@@ -1577,6 +1596,7 @@
       },
       "DotNetCore.FantasyFootball.Core/1.0.0": {
         "dependencies": {
+          "HtmlAgilityPack.NetCore": "1.5.0.1",
           "NETStandard.Library": "1.6.0"
         },
         "runtime": {
@@ -1589,6 +1609,7 @@
       "DotNetCore.FantasyFootball.Parser/1.0.0": {
         "dependencies": {
           "DotNetCore.FantasyFootball.Core": "1.0.0",
+          "HtmlAgilityPack.NetCore": "1.5.0.1",
           "NETStandard.Library": "1.6.0"
         },
         "runtime": {
@@ -3205,6 +3226,9 @@
           "System.Threading": "4.0.11",
           "System.Xml.ReaderWriter": "4.0.11"
         },
+        "compile": {
+          "ref/netstandard1.3/System.Xml.XPath.dll": {}
+        },
         "compileOnly": true
       },
       "System.Xml.XPath.XDocument/4.0.1": {
@@ -3228,6 +3252,11 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "HtmlAgilityPack.NetCore/1.5.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-N6FUlFbidfiWu1TcrNDQufaU5TbZ2RRn+kYHjwsLxcklQU8Cnmul+pTn2clKausZRHeFVxGp2ZECIWuDvot8Hg=="
     },
     "Microsoft.AspNetCore.Antiforgery/1.0.0": {
       "type": "package",
