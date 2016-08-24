@@ -3,6 +3,26 @@
   "version": 2,
   "targets": {
     ".NETCoreApp,Version=v1.0": {
+      "HtmlAgilityPack.NetCore/1.5.0.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Collections": "4.0.11",
+          "System.Diagnostics.Debug": "4.0.11",
+          "System.Linq": "4.1.0",
+          "System.Runtime": "4.1.0",
+          "System.Runtime.Extensions": "4.1.0",
+          "System.Runtime.InteropServices": "4.1.0",
+          "System.Text.RegularExpressions": "4.1.0",
+          "System.Threading": "4.0.11",
+          "System.Xml.XPath": "4.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.3/HtmlAgilityPack.NetCore.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/HtmlAgilityPack.NetCore.dll": {}
+        }
+      },
       "Libuv/1.9.0": {
         "type": "package",
         "dependencies": {
@@ -3779,7 +3799,7 @@
           "System.Xml.ReaderWriter": "4.0.11"
         },
         "compile": {
-          "ref/netstandard1.3/_._": {}
+          "ref/netstandard1.3/System.Xml.XPath.dll": {}
         },
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.dll": {}
@@ -3823,6 +3843,7 @@
         "framework": ".NETStandard,Version=v1.6",
         "dependencies": {
           "DotNetCore.FantasyFootball.Core": "1.0.0",
+          "HtmlAgilityPack.NetCore": "1.5.0.1",
           "NETStandard.Library": "1.6.0"
         },
         "compile": {
@@ -3835,6 +3856,17 @@
     }
   },
   "libraries": {
+    "HtmlAgilityPack.NetCore/1.5.0.1": {
+      "sha512": "N6FUlFbidfiWu1TcrNDQufaU5TbZ2RRn+kYHjwsLxcklQU8Cnmul+pTn2clKausZRHeFVxGp2ZECIWuDvot8Hg==",
+      "type": "package",
+      "path": "HtmlAgilityPack.NetCore/1.5.0.1",
+      "files": [
+        "HtmlAgilityPack.NetCore.1.5.0.1.nupkg.sha512",
+        "HtmlAgilityPack.NetCore.nuspec",
+        "lib/net45/HtmlAgilityPack.NetCore.dll",
+        "lib/netstandard1.3/HtmlAgilityPack.NetCore.dll"
+      ]
+    },
     "Libuv/1.9.0": {
       "sha512": "9Q7AaqtQhS8JDSIvRBt6ODSLWDBI4c8YxNxyCQemWebBFUtBbc6M5Vi5Gz1ZyIUlTW3rZK9bIr5gnVyv0z7a2Q==",
       "type": "package",

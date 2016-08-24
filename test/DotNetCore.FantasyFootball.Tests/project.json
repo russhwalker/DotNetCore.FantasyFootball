@@ -3,8 +3,9 @@
 
   "dependencies": {
     "DotNetCore.FantasyFootball.Core": "1.0.0-*",
-    "HtmlAgilityPack.NetCore": "1.5.0.1",
-    "NETStandard.Library": "1.6.0"
+    "DotNetCore.FantasyFootball.Parser": "1.0.0-*",
+    "NETStandard.Library": "1.6.0",
+    "xunit": "2.2.0-beta2-build3300"
   },
 
   "frameworks": {

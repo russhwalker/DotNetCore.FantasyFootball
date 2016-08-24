@@ -1,4 +1,10 @@
+#:C:\dev\Repos\DotNetCore.FantasyFootball\src\DotNetCore.FantasyFootball.Parser\DotNetCore.FantasyFootball.Parser.xproj
+C:\dev\Repos\DotNetCore.FantasyFootball\src\DotNetCore.FantasyFootball.Parser\DotNetCore.FantasyFootball.Parser.xproj|C:\dev\Repos\DotNetCore.FantasyFootball\src\DotNetCore.FantasyFootball.Core\DotNetCore.FantasyFootball.Core.xproj
 #:C:\dev\Repos\DotNetCore.FantasyFootball\src\DotNetCore.FantasyFootball.Web\DotNetCore.FantasyFootball.Web.xproj
 C:\dev\Repos\DotNetCore.FantasyFootball\src\DotNetCore.FantasyFootball.Web\DotNetCore.FantasyFootball.Web.xproj|C:\dev\Repos\DotNetCore.FantasyFootball\src\DotNetCore.FantasyFootball.Core\DotNetCore.FantasyFootball.Core.xproj
 C:\dev\Repos\DotNetCore.FantasyFootball\src\DotNetCore.FantasyFootball.Web\DotNetCore.FantasyFootball.Web.xproj|C:\dev\Repos\DotNetCore.FantasyFootball\src\DotNetCore.FantasyFootball.Parser\DotNetCore.FantasyFootball.Parser.xproj
+C:\dev\Repos\DotNetCore.FantasyFootball\src\DotNetCore.FantasyFootball.Parser\DotNetCore.FantasyFootball.Parser.xproj|C:\dev\Repos\DotNetCore.FantasyFootball\src\DotNetCore.FantasyFootball.Core\DotNetCore.FantasyFootball.Core.xproj
+#:C:\dev\Repos\DotNetCore.FantasyFootball\test\DotNetCore.FantasyFootball.Tests\DotNetCore.FantasyFootball.Tests.xproj
+C:\dev\Repos\DotNetCore.FantasyFootball\test\DotNetCore.FantasyFootball.Tests\DotNetCore.FantasyFootball.Tests.xproj|C:\dev\Repos\DotNetCore.FantasyFootball\src\DotNetCore.FantasyFootball.Core\DotNetCore.FantasyFootball.Core.xproj
+C:\dev\Repos\DotNetCore.FantasyFootball\test\DotNetCore.FantasyFootball.Tests\DotNetCore.FantasyFootball.Tests.xproj|C:\dev\Repos\DotNetCore.FantasyFootball\src\DotNetCore.FantasyFootball.Parser\DotNetCore.FantasyFootball.Parser.xproj
 C:\dev\Repos\DotNetCore.FantasyFootball\src\DotNetCore.FantasyFootball.Parser\DotNetCore.FantasyFootball.Parser.xproj|C:\dev\Repos\DotNetCore.FantasyFootball\src\DotNetCore.FantasyFootball.Core\DotNetCore.FantasyFootball.Core.xproj
