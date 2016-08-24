@@ -3838,21 +3838,6 @@
         "runtime": {
           "netstandard1.6/DotNetCore.FantasyFootball.Core.dll": {}
         }
-      },
-      "DotNetCore.FantasyFootball.Parser/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v1.6",
-        "dependencies": {
-          "DotNetCore.FantasyFootball.Core": "1.0.0",
-          "HtmlAgilityPack.NetCore": "1.5.0.1",
-          "NETStandard.Library": "1.6.0"
-        },
-        "compile": {
-          "netstandard1.6/DotNetCore.FantasyFootball.Parser.dll": {}
-        },
-        "runtime": {
-          "netstandard1.6/DotNetCore.FantasyFootball.Parser.dll": {}
-        }
       }
     }
   },
@@ -9939,17 +9924,11 @@
       "type": "project",
       "path": "../DotNetCore.FantasyFootball.Core/project.json",
       "msbuildProject": "../DotNetCore.FantasyFootball.Core/DotNetCore.FantasyFootball.Core.xproj"
-    },
-    "DotNetCore.FantasyFootball.Parser/1.0.0": {
-      "type": "project",
-      "path": "../DotNetCore.FantasyFootball.Parser/project.json",
-      "msbuildProject": "../DotNetCore.FantasyFootball.Parser/DotNetCore.FantasyFootball.Parser.xproj"
     }
   },
   "projectFileDependencyGroups": {
     "": [
       "DotNetCore.FantasyFootball.Core >= 1.0.0-*",
-      "DotNetCore.FantasyFootball.Parser >= 1.0.0-*",
       "Microsoft.AspNetCore.Diagnostics >= 1.0.0",
       "Microsoft.AspNetCore.Mvc >= 1.0.0",
       "Microsoft.AspNetCore.Razor.Tools >= 1.0.0-preview2-final",

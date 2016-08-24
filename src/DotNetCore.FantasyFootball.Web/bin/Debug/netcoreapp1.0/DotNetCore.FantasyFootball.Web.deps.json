@@ -29,8 +29,7 @@
           "Microsoft.Extensions.Logging.Debug": "1.0.0",
           "Microsoft.Extensions.Options.ConfigurationExtensions": "1.0.0",
           "Microsoft.VisualStudio.Web.BrowserLink.Loader": "14.0.0",
-          "DotNetCore.FantasyFootball.Core": "1.0.0",
-          "DotNetCore.FantasyFootball.Parser": "1.0.0"
+          "DotNetCore.FantasyFootball.Core": "1.0.0"
         },
         "runtime": {
           "DotNetCore.FantasyFootball.Web.dll": {}
@@ -1604,19 +1603,6 @@
         },
         "compile": {
           "DotNetCore.FantasyFootball.Core.dll": {}
-        }
-      },
-      "DotNetCore.FantasyFootball.Parser/1.0.0": {
-        "dependencies": {
-          "DotNetCore.FantasyFootball.Core": "1.0.0",
-          "HtmlAgilityPack.NetCore": "1.5.0.1",
-          "NETStandard.Library": "1.6.0"
-        },
-        "runtime": {
-          "DotNetCore.FantasyFootball.Parser.dll": {}
-        },
-        "compile": {
-          "DotNetCore.FantasyFootball.Parser.dll": {}
         }
       },
       "Libuv/1.9.0": {
@@ -3749,11 +3735,6 @@
       "sha512": "sha512-TWZnuiJgPDAEEUfobD7njXvSVR2Toz+jvKWds6yL4oSztmKQfnWzucczjzA+6Dv1bktBdY71sZW1YN0X6m9chQ=="
     },
     "DotNetCore.FantasyFootball.Core/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "DotNetCore.FantasyFootball.Parser/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

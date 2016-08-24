@@ -8,6 +8,7 @@ namespace DotNetCore.FantasyFootball.Core.Models
     {
         public string SiteName { get; set; }
         public string SiteUrl { get; set; }
+        public string SiteHtml { get; set; }
         public SiteParseParams SiteParseParams { get; set; }
         public List<Player> Players { get; set; }
     }

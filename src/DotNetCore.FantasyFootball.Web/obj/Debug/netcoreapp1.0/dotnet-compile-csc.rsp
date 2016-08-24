@@ -189,7 +189,6 @@
 -r:"C:\Users\russh\.nuget\packages\System.Xml.XDocument\4.0.11\ref\netstandard1.3\System.Xml.XDocument.dll"
 -r:"C:\Users\russh\.nuget\packages\System.Xml.XPath\4.0.1\ref\netstandard1.3\System.Xml.XPath.dll"
 -r:"C:\dev\Repos\DotNetCore.FantasyFootball\src\DotNetCore.FantasyFootball.Core\bin\Debug\netstandard1.6\DotNetCore.FantasyFootball.Core.dll"
--r:"C:\dev\Repos\DotNetCore.FantasyFootball\src\DotNetCore.FantasyFootball.Parser\bin\Debug\netstandard1.6\DotNetCore.FantasyFootball.Parser.dll"
 -resource:"C:\dev\Repos\DotNetCore.FantasyFootball\src\DotNetCore.FantasyFootball.Web\obj\Debug\netcoreapp1.0\DotNetCore.FantasyFootball.Webdotnet-compile.deps.json",DotNetCore.FantasyFootball.Web.deps.json
 "C:\dev\Repos\DotNetCore.FantasyFootball\src\DotNetCore.FantasyFootball.Web\Program.cs"
 "C:\dev\Repos\DotNetCore.FantasyFootball\src\DotNetCore.FantasyFootball.Web\Startup.cs"

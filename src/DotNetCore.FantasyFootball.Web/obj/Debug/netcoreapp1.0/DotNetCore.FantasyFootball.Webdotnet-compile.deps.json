@@ -29,8 +29,7 @@
           "Microsoft.Extensions.Logging.Debug": "1.0.0",
           "Microsoft.Extensions.Options.ConfigurationExtensions": "1.0.0",
           "Microsoft.VisualStudio.Web.BrowserLink.Loader": "14.0.0",
-          "DotNetCore.FantasyFootball.Core": "1.0.0",
-          "DotNetCore.FantasyFootball.Parser": "1.0.0"
+          "DotNetCore.FantasyFootball.Core": "1.0.0"
         },
         "compile": {
           "DotNetCore.FantasyFootball.Web.dll": {}
@@ -2592,16 +2591,6 @@
         "compile": {
           "DotNetCore.FantasyFootball.Core.dll": {}
         }
-      },
-      "DotNetCore.FantasyFootball.Parser/1.0.0": {
-        "dependencies": {
-          "DotNetCore.FantasyFootball.Core": "1.0.0",
-          "HtmlAgilityPack.NetCore": "1.5.0.1",
-          "NETStandard.Library": "1.6.0"
-        },
-        "compile": {
-          "DotNetCore.FantasyFootball.Parser.dll": {}
-        }
       }
     },
     ".NETCoreApp,Version=v1.0/": {
@@ -2620,8 +2609,7 @@
           "Microsoft.Extensions.Logging.Debug": "1.0.0",
           "Microsoft.Extensions.Options.ConfigurationExtensions": "1.0.0",
           "Microsoft.VisualStudio.Web.BrowserLink.Loader": "14.0.0",
-          "DotNetCore.FantasyFootball.Core": "1.0.0",
-          "DotNetCore.FantasyFootball.Parser": "1.0.0"
+          "DotNetCore.FantasyFootball.Core": "1.0.0"
         },
         "runtime": {
           "DotNetCore.FantasyFootball.Web.dll": {}
@@ -5090,16 +5078,6 @@
         "runtime": {
           "DotNetCore.FantasyFootball.Core.dll": {}
         }
-      },
-      "DotNetCore.FantasyFootball.Parser/1.0.0": {
-        "dependencies": {
-          "DotNetCore.FantasyFootball.Core": "1.0.0",
-          "HtmlAgilityPack.NetCore": "1.5.0.1",
-          "NETStandard.Library": "1.6.0"
-        },
-        "runtime": {
-          "DotNetCore.FantasyFootball.Parser.dll": {}
-        }
       }
     }
   },
@@ -6060,11 +6038,6 @@
       "sha512": "sha512-FLhdYJx4331oGovQypQ8JIw2kEmNzCsjVOVYY/16kZTUoquZG85oVn7yUhBE2OZt1yGPSXAL0HTEfzjlbNpM7Q=="
     },
     "DotNetCore.FantasyFootball.Core/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "DotNetCore.FantasyFootball.Parser/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

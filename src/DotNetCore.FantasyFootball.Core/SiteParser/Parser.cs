@@ -7,23 +7,22 @@ namespace DotNetCore.FantasyFootball.Core.SiteParser
     public class Parser : ISiteParser
     {
 
-        private readonly SiteParseParams siteParseParams;
+        private readonly FantasySite fantasySite;
         public HtmlAgilityPack.HtmlNodeCollection TableRows { get; private set; }
         public bool ParseSuccessful { get; private set; }
-        public List<Player> ParsedPlayers { get; private set; }
 
-        public Parser(SiteParseParams siteParseParams)
+        public Parser(FantasySite fantasySite)
         {
-            this.siteParseParams = siteParseParams;
-            this.ParsedPlayers = new List<Player>();
+            this.fantasySite = fantasySite;
+            this.fantasySite.Players = new List<Player>();
             Load();
         }
 
         private void Load()
         {
             var htmlDoc = new HtmlAgilityPack.HtmlDocument();
-            htmlDoc.LoadHtml(siteParseParams.Html);
-            var table = htmlDoc.DocumentNode.SelectSingleNode(siteParseParams.TableXPath);
+            htmlDoc.LoadHtml(this.fantasySite.SiteHtml);
+            var table = htmlDoc.DocumentNode.SelectSingleNode(this.fantasySite.SiteParseParams.TableXPath);
             this.TableRows = table.SelectNodes("//tr");
         }
 
@@ -33,8 +32,8 @@ namespace DotNetCore.FantasyFootball.Core.SiteParser
             {
                 try
                 {
-                    var player = record.ParseRow(this.siteParseParams);
-                    this.ParsedPlayers.Add(player);
+                    var player = record.ParseRow(this.fantasySite.SiteParseParams);
+                    this.fantasySite.Players.Add(player);
                 }
                 catch (Exception ex)
                 {
