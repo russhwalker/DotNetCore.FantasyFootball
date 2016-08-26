@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace DotNetCore.FantasyFootball.Core
 {
-    public class HtmlLoader
+    public class HtmlLoader : IHtmlLoader
     {
         
         public string GetHtml(string pageUri)

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Xunit;
-using DotNetCore.FantasyFootball.Core.SiteParser;
+using DotNetCore.FantasyFootball.Core.PageParser;
 
 namespace DotNetCore.FantasyFootball.Tests
 {
@@ -33,8 +33,8 @@ namespace DotNetCore.FantasyFootball.Tests
             </html>";
             var fantasySite = new Core.Models.FantasySite
             {
-                SiteHtml = TestHtml,
-                SiteParseParams = new SiteParseParams
+                PageHtml = TestHtml,
+                PageParseParams = new PageParseParams
                 {
                     TableXPath = "//table[1]"
                 }

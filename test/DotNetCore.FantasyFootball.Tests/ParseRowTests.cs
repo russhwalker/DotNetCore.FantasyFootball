@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Xunit;
-using DotNetCore.FantasyFootball.Core.SiteParser;
+using DotNetCore.FantasyFootball.Core.PageParser;
 
 namespace DotNetCore.FantasyFootball.Tests
 {
@@ -13,7 +13,7 @@ namespace DotNetCore.FantasyFootball.Tests
         [Fact]
         public void ParseRow_TextOnly()
         {
-            var pageParseParams = new SiteParseParams
+            var pageParseParams = new PageParseParams
             {
                 NameCellParams = new CellParseParams
                 {
@@ -36,7 +36,7 @@ namespace DotNetCore.FantasyFootball.Tests
         [Fact]
         public void ParseRow_()
         {
-            var pageParseParams = new SiteParseParams
+            var pageParseParams = new PageParseParams
             {
                 NameCellParams = new CellParseParams
                 {

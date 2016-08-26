@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Xunit;
-using DotNetCore.FantasyFootball.Core.SiteParser;
+using DotNetCore.FantasyFootball.Core.PageParser;
 
 namespace DotNetCore.FantasyFootball.Tests
 {
@@ -30,7 +30,7 @@ namespace DotNetCore.FantasyFootball.Tests
                 CellXPath = "td[1]"
             };
             var tableRowNode = HtmlAgilityPack.HtmlNode.CreateNode("<tr><td></td></tr>");
-            var value = tableRowNode.ParseCell(cellParseParams);
+            var value = tableRowNode.ParseCell(cellParseParams); 
             Assert.Equal(string.Empty, value);
         }
 
