@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace DotNetCore.FantasyFootball.Core
 {
-    public interface ISiteCollectionParser
+    public interface ISiteCollectionProcessor
     {
         void Process();
     }

@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using DotNetCore.FantasyFootball.Core;
 
 namespace DotNetCore.FantasyFootball.Web
 {
@@ -29,6 +30,8 @@ namespace DotNetCore.FantasyFootball.Web
         {
             // Add framework services.
             services.AddMvc();
+
+            services.AddTransient<ISiteCollectionProcessor, SiteCollectionProcessor>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

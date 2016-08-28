@@ -7,6 +7,6 @@ namespace DotNetCore.FantasyFootball.Core.Models
     public class SiteCollection
     {
         public List<FantasySite> FantasySites { get; set; }
-        public List<Player> Players { get; set; }
+        public List<PlayerAggregate> PlayerAggregates { get; set; }
     }
 }

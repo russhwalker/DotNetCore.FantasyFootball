@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using DotNetCore.FantasyFootball.Core;
 using DotNetCore.FantasyFootball.Core.Models;
 using Xunit;
@@ -9,7 +6,7 @@ using DotNetCore.FantasyFootball.Core.PageParser;
 
 namespace DotNetCore.FantasyFootball.Tests
 {
-    public class SiteParserTests
+    public class SiteCollectionProcessorTests
     {
 
         private class FakeHtmlLoader : IHtmlLoader
@@ -23,7 +20,7 @@ namespace DotNetCore.FantasyFootball.Tests
         }
 
         [Fact]
-        public void SiteCollectionParser()
+        public void SiteCollectionProcessor()
         {
             //Got nesting?
             var siteCollection = new SiteCollection
@@ -75,10 +72,10 @@ namespace DotNetCore.FantasyFootball.Tests
                 }
             };
 
-            var siteParser = new SiteCollectionProcessor(siteCollection, new FakeHtmlLoader());
-            siteParser.Process();
+            var siteCollectionProcessor = new SiteCollectionProcessor(siteCollection, new FakeHtmlLoader());
+            siteCollectionProcessor.Process();
 
-
+            Assert.Equal(1, siteCollectionProcessor.SiteCollection.PlayerAggregates.Count);
         }
 
     }
