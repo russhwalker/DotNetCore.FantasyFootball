@@ -1,23 +1,55 @@
 ﻿@model DotNetCore.FantasyFootball.Web.ViewModels.FantasySiteViewModel
+<div class="form-inline fantasy-site">
 
+    <div class="form-group-sm">
+        <label asp-for="SiteUrl">Site Url:</label>
+        <input asp-for="SiteUrl" type="text" class="form-control" />
+    </div>
 
-<div class="form-group">
-    <label asp-for="TableXPath">Table X path</label>
-    <input asp-for="TableXPath" type="text" class="form-control"/>
-</div>
+    <div class="form-group-sm">
+        <label asp-for="TableXPath">Table XPath:</label>
+        <input asp-for="TableXPath" type="text" class="form-control" />
+    </div>
 
-<h3>Name Field:</h3>
-<div class="form-group">
-    <label asp-for="NameCellXPath">Cell X path</label>
-    <input asp-for="NameCellXPath" type="text" class="form-control" />
-</div>
+    <h3>Name Field</h3>
+    <div class="form-group-sm">
+        <label asp-for="NameCellXPath">Cell XPath:</label>
+        <input asp-for="NameCellXPath" type="text" class="form-control" />
+    </div>
+    <div class="form-group-sm">
+        <label asp-for="NameIndexPosition">Index Position:</label>
+        <input asp-for="NameIndexPosition" type="text" class="form-control" />
+    </div>
+    <div class="form-group-sm">
+        <label asp-for="NameSplitOnValue">Split On Value:</label>
+        <input asp-for="NameSplitOnValue" type="text" class="form-control" />
+    </div>
 
-<div class="form-group">
-    <label asp-for="NameIndexPosition">Index Position</label>
-    <input asp-for="NameIndexPosition" type="text" class="form-control" />
-</div>
+    <h3>Rank Field</h3>
+    <div class="form-group-sm">
+        <label asp-for="RankCellXPath">Cell XPath:</label>
+        <input asp-for="RankCellXPath" type="text" class="form-control" />
+    </div>
+    <div class="form-group-sm">
+        <label asp-for="RankIndexPosition">Index Position:</label>
+        <input asp-for="RankIndexPosition" type="text" class="form-control" />
+    </div>
+    <div class="form-group-sm">
+        <label asp-for="RankSplitOnValue">Split On Value:</label>
+        <input asp-for="RankSplitOnValue" type="text" class="form-control" />
+    </div>
 
-<div class="form-group">
-    <label asp-for="NameSplitOnValue">Split On Value</label>
-    <input asp-for="NameSplitOnValue" type="text" class="form-control" />
+    <h3>Position Field</h3>
+    <div class="form-group-sm">
+        <label asp-for="PositionCellXPath">Cell XPath:</label>
+        <input asp-for="PositionCellXPath" type="text" class="form-control" />
+    </div>
+    <div class="form-group-sm">
+        <label asp-for="PositionIndexPosition">Index Position:</label>
+        <input asp-for="PositionIndexPosition" type="text" class="form-control" />
+    </div>
+    <div class="form-group-sm">
+        <label asp-for="PositionSplitOnValue">Split On Value:</label>
+        <input asp-for="PositionSplitOnValue" type="text" class="form-control" />
+    </div>
 </div>

@@ -21,7 +21,7 @@ namespace DotNetCore.FantasyFootball.Web.ViewModels
 
         public string PositionCellXPath { get; set; }
         public string PositionSplitOnValue { get; set; }
-        public int IndexPosition { get; set; }
+        public int PositionIndexPosition { get; set; }
 
     }
 }

@@ -1,8 +1,16 @@
 ﻿@model DotNetCore.FantasyFootball.Web.ViewModels.HomeViewModel
-
 <div class="row">
-    <div class="col-md-9">
-        <h2>Application uses</h2>
-        @Html.Partial("_FantasySite", Model.FantasySiteViewModel)
+    <div class="col-md-9 home">
+        @using (Html.BeginForm())
+        {
+            <h2>Fantasy Site 1</h2>
+            @Html.Partial("_FantasySite", Model.FantasySiteViewModel1)
+            <h2>Fantasy Site 2</h2>
+            @Html.Partial("_FantasySite", Model.FantasySiteViewModel2)
+            <h2>Fantasy Site 3</h2>
+            @Html.Partial("_FantasySite", Model.FantasySiteViewModel3)
+
+            <input type="submit" class="btn btn-primary" value="Submit" />
+        }
     </div>
 </div>
