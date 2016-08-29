@@ -16,9 +16,10 @@ namespace DotNetCore.FantasyFootball.Web.Controllers
             this.siteCollectionProcessor = siteCollectionProcessor;
         }
 
-        public IActionResult Index(ISiteCollectionProcessor siteCollectionProcessor)
+        public IActionResult Index()
         {
-            return View();
+            var viewModel = new ViewModels.HomeViewModel();
+            return View(viewModel);
         }
         
     }

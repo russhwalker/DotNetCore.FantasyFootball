@@ -72,10 +72,10 @@ namespace DotNetCore.FantasyFootball.Tests
                 }
             };
 
-            var siteCollectionProcessor = new SiteCollectionProcessor(siteCollection, new FakeHtmlLoader());
-            siteCollectionProcessor.Process();
+            var siteCollectionProcessor = new SiteCollectionProcessor(new FakeHtmlLoader());
+            var playerAggregates = siteCollectionProcessor.Process(siteCollection);
 
-            Assert.Equal(1, siteCollectionProcessor.SiteCollection.PlayerAggregates.Count);
+            Assert.Equal(1, playerAggregates.Count);
         }
 
     }

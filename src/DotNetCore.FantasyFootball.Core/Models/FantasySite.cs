@@ -11,5 +11,6 @@ namespace DotNetCore.FantasyFootball.Core.Models
         public string PageHtml { get; set; }
         public PageParseParams PageParseParams { get; set; }
         public List<Player> Players { get; set; }
+        public bool ValidSite { get; set; }
     }
 }

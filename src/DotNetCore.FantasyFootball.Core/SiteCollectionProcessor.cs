@@ -9,19 +9,17 @@ namespace DotNetCore.FantasyFootball.Core
     public class SiteCollectionProcessor : ISiteCollectionProcessor
     {
 
-        public SiteCollection SiteCollection { get; private set; }
         private readonly IHtmlLoader htmlLoader;
-
-        public SiteCollectionProcessor(SiteCollection siteCollection, IHtmlLoader htmlLoader)
+        
+        public SiteCollectionProcessor(IHtmlLoader htmlLoader)
         {
-            this.SiteCollection = siteCollection;
             this.htmlLoader = htmlLoader;
         }
 
-        public void Process()
+        public List<PlayerAggregate> Process(SiteCollection siteCollection)
         {
             var players = new List<Player>();
-            foreach (var fantasySite in this.SiteCollection.FantasySites)
+            foreach (var fantasySite in siteCollection.FantasySites)
             {
                 fantasySite.PageHtml = this.htmlLoader.GetHtml(fantasySite.PageUrl);
                 var parser = new PageParser.Parser(fantasySite);
@@ -29,15 +27,14 @@ namespace DotNetCore.FantasyFootball.Core
                 players.AddRange(fantasySite.Players);
             }
 
-            this.SiteCollection.PlayerAggregates =
-                (from p in players
-                 group p by p.Name into g
-                 select new PlayerAggregate
-                 {
-                     Name = g.Key,
-                     Rank = g.Sum(x => x.Rank) / g.Count(),
-                     Position = g.Select(x => x.Position).Distinct().FirstOrDefault()
-                 }).ToList();
+            return (from p in players
+                    group p by p.Name into g
+                    select new PlayerAggregate
+                    {
+                        Name = g.Key,
+                        Rank = g.Sum(x => x.Rank) / g.Count(),
+                        Position = g.Select(x => x.Position).Distinct().FirstOrDefault()
+                    }).ToList();
         }
 
     }

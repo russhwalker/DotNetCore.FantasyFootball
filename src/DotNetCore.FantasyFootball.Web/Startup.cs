@@ -32,6 +32,7 @@ namespace DotNetCore.FantasyFootball.Web
             services.AddMvc();
 
             services.AddTransient<ISiteCollectionProcessor, SiteCollectionProcessor>();
+            services.AddTransient<IHtmlLoader, HtmlLoader>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
