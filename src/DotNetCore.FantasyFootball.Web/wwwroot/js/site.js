@@ -1,6 +1,6 @@
 ﻿// Write your Javascript code.
 
-var app = APP || {};
+var app = app || {};
 
 app.Test = {
 

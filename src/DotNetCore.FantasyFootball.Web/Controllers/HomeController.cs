@@ -18,7 +18,21 @@ namespace DotNetCore.FantasyFootball.Web.Controllers
 
         public IActionResult Index()
         {
-            var viewModel = new HomeViewModel();
+            var viewModel = new HomeViewModel
+            {
+                SiteUrl1 = "http://fantasy.nfl.com/research/rankings?leagueId=0&statType=draftStats",
+                TableXPath1 = "//table[1]",
+                NameCellXPath1 = "td[2]/div/a",
+                RankCellXPath1 = "td[1]",
+                PositionCellXPath1 = "td[2]/div/em",
+                PositionSplitOnValue1 = "-",
+                PositionIndexPosition1 = 0,
+                SiteUrl2 = "http://www.fantasyfootballnerd.com/fantasy-football-draft-rankings",
+                TableXPath2 = "//table[1]",
+                NameCellXPath2 = "td[4]/a",
+                RankCellXPath2 = "td[1]",
+                PositionCellXPath2 = "td[3]"
+            };
             return View(viewModel);
         }
 
@@ -83,8 +97,8 @@ namespace DotNetCore.FantasyFootball.Web.Controllers
                     }
                 }
             };
-            var playersAgrregates = this.siteCollectionProcessor.Process(siteCollection);
-            return null;
+            viewModel.PlayerAggregates = this.siteCollectionProcessor.Process(siteCollection);
+            return View(viewModel);
         }
 
     }

@@ -2,26 +2,19 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using DotNetCore.FantasyFootball.Core.Models;
 
 namespace DotNetCore.FantasyFootball.Web.ViewModels
 {
     public class HomeViewModel
     {
+
         public HomeViewModel()
         {
-            this.SiteUrl1 = "http://fantasy.nfl.com/research/rankings?leagueId=0&statType=draftStats";
-            this.TableXPath1 = "//table[1]";
-            this.NameCellXPath1 = "//td[2]";
-            this.RankCellXPath1 = "//td[1]";
-            this.PositionCellXPath1 = "//td[2]";
-
-            this.SiteUrl2 = "http://www.espn.com/fantasy/football/story/_/id/16287927/2016-fantasy-football-rankings-top-300";
-            this.TableXPath2 = "//table[1]";
-            this.NameCellXPath2 = "//td[1]";
-            this.RankCellXPath2 = "//td[1]";
-            this.PositionCellXPath2 = "//td[2]";
+            this.PlayerAggregates = new List<PlayerAggregate>();
         }
 
+        public List<PlayerAggregate> PlayerAggregates { get; set; }
 
         public string SiteUrl1 { get; set; }
         public string TableXPath1 { get; set; }

@@ -15,7 +15,9 @@ namespace DotNetCore.FantasyFootball.Core.PageParser
 
             if (!string.IsNullOrWhiteSpace(pageParseParams.NameCellParams?.CellXPath))
             {
-                player.Name = rowNode.ParseCell(pageParseParams.NameCellParams);
+                var nameParts = rowNode.ParseCell(pageParseParams.NameCellParams).Split(' ');
+                //Just use first/last and exlude any suffixes(jr/sr etc..)
+                player.Name = $"{nameParts[0]} {nameParts[1]}".Trim();
             }
             if (!string.IsNullOrWhiteSpace(pageParseParams.RankCellParams?.CellXPath))
             {

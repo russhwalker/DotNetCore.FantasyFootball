@@ -8,7 +8,7 @@ namespace DotNetCore.FantasyFootball.Core.Models
     public class PlayerAggregate
     {
         public string Name { get; set; }
-        public int Rank { get; set; }
+        public decimal Rank { get; set; }
         public string Position { get; set; }
     }
 }

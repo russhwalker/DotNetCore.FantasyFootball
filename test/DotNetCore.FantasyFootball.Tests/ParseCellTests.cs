@@ -35,13 +35,25 @@ namespace DotNetCore.FantasyFootball.Tests
         }
 
         [Fact]
-        public void ParseCell_InsideElement()
+        public void ParseCell_ChildElement()
         {
             var cellParseParams = new CellParseParams
             {
                 CellXPath = "td[1]/a"
             };
             var tableRowNode = HtmlAgilityPack.HtmlNode.CreateNode("<tr><td><a href='#' class='test bold'>foo</a></td></tr>");
+            var value = tableRowNode.ParseCell(cellParseParams);
+            Assert.Equal("foo", value);
+        }
+
+        [Fact]
+        public void ParseCell_SubChildElement()
+        {
+            var cellParseParams = new CellParseParams
+            {
+                CellXPath = "td[1]/div/a"
+            };
+            var tableRowNode = HtmlAgilityPack.HtmlNode.CreateNode("<tr><td class='playerNameAndInfo'><div class='c c-pit'><b></b><a onclick = 'return false' href='/players/card?leagueId=0&playerId=2508061' class='playerCard playerName playerNameFull playerNameId-2508061 what-playerCard'>foo</a> <em>WR - PIT</em>    </div></td></tr>");
             var value = tableRowNode.ParseCell(cellParseParams);
             Assert.Equal("foo", value);
         }

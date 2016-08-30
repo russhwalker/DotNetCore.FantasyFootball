@@ -5,17 +5,14 @@
         {
             <h2>Fantasy Site 1</h2>
             <div class="form-inline fantasy-site">
-
                 <div class="form-group-sm">
                     <label asp-for="SiteUrl1">Site Url:</label>
                     <input asp-for="SiteUrl1" type="text" class="form-control" />
                 </div>
-
                 <div class="form-group-sm">
                     <label asp-for="TableXPath1">Table XPath:</label>
                     <input asp-for="TableXPath1" type="text" class="form-control" />
                 </div>
-
                 <h3>Name Field</h3>
                 <div class="form-group-sm">
                     <label asp-for="NameCellXPath1">Cell XPath:</label>
@@ -29,7 +26,6 @@
                     <label asp-for="NameSplitOnValue1">Split On Value:</label>
                     <input asp-for="NameSplitOnValue1" type="text" class="form-control" />
                 </div>
-
                 <h3>Rank Field</h3>
                 <div class="form-group-sm">
                     <label asp-for="RankCellXPath1">Cell XPath:</label>
@@ -43,7 +39,6 @@
                     <label asp-for="RankSplitOnValue1">Split On Value:</label>
                     <input asp-for="RankSplitOnValue1" type="text" class="form-control" />
                 </div>
-
                 <h3>Position Field</h3>
                 <div class="form-group-sm">
                     <label asp-for="PositionCellXPath1">Cell XPath:</label>
@@ -60,17 +55,14 @@
             </div>
             <h2>Fantasy Site 2</h2>
             <div class="form-inline fantasy-site">
-
                 <div class="form-group-sm">
                     <label asp-for="SiteUrl2">Site Url:</label>
                     <input asp-for="SiteUrl2" type="text" class="form-control" />
                 </div>
-
                 <div class="form-group-sm">
                     <label asp-for="TableXPath2">Table XPath:</label>
                     <input asp-for="TableXPath2" type="text" class="form-control" />
                 </div>
-
                 <h3>Name Field</h3>
                 <div class="form-group-sm">
                     <label asp-for="NameCellXPath2">Cell XPath:</label>
@@ -84,7 +76,6 @@
                     <label asp-for="NameSplitOnValue2">Split On Value:</label>
                     <input asp-for="NameSplitOnValue2" type="text" class="form-control" />
                 </div>
-
                 <h3>Rank Field</h3>
                 <div class="form-group-sm">
                     <label asp-for="RankCellXPath2">Cell XPath:</label>
@@ -98,7 +89,6 @@
                     <label asp-for="RankSplitOnValue2">Split On Value:</label>
                     <input asp-for="RankSplitOnValue2" type="text" class="form-control" />
                 </div>
-
                 <h3>Position Field</h3>
                 <div class="form-group-sm">
                     <label asp-for="PositionCellXPath2">Cell XPath:</label>
@@ -117,4 +107,26 @@
             <input type="submit" class="btn btn-primary" value="Submit" />
         }
     </div>
+</div>
+
+<div class="row">
+    <table class="table table-condensed table-striped">
+        <thead>
+        <tr>
+            <th>Rank</th>
+            <th>Name</th>
+            <th>Position</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var player in Model.PlayerAggregates)
+        {
+            <tr>
+                <td>@player.Rank</td>
+                <td>@player.Name</td>
+                <td>@player.Position</td>
+            </tr>
+        }
+        </tbody>
+    </table>
 </div>

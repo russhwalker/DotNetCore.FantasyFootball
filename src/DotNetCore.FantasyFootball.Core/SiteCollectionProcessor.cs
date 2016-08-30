@@ -10,7 +10,7 @@ namespace DotNetCore.FantasyFootball.Core
     {
 
         private readonly IHtmlLoader htmlLoader;
-        
+
         public SiteCollectionProcessor(IHtmlLoader htmlLoader)
         {
             this.htmlLoader = htmlLoader;
@@ -28,13 +28,16 @@ namespace DotNetCore.FantasyFootball.Core
             }
 
             return (from p in players
-                    group p by p.Name into g
+                    group p by p.Name
+                    into g
                     select new PlayerAggregate
                     {
                         Name = g.Key,
-                        Rank = g.Sum(x => x.Rank) / g.Count(),
+                        Rank = (decimal)g.Sum(x => x.Rank) / (decimal)g.Count(),
                         Position = g.Select(x => x.Position).Distinct().FirstOrDefault()
-                    }).ToList();
+                    })
+                .OrderBy(p => p.Rank)
+                .ToList();
         }
 
     }

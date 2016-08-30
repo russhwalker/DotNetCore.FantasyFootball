@@ -33,30 +33,5 @@ namespace DotNetCore.FantasyFootball.Tests
             Assert.NotNull(player);
         }
 
-        [Fact]
-        public void ParseRow_()
-        {
-            var pageParseParams = new PageParseParams
-            {
-                NameCellParams = new CellParseParams
-                {
-                    CellXPath = "td[2]"
-                },
-                RankCellParams = new CellParseParams
-                {
-                    CellXPath = "td[1]"
-                },
-                PositionCellParams = new CellParseParams
-                {
-                    CellXPath = "td[3]"
-                }
-            };
-            var tableRowNode = HtmlAgilityPack.HtmlNode.CreateNode("<tr><td>3</td><td>John Doe</td><td>WR</td></tr>");
-            var player = tableRowNode.ParseRow(pageParseParams);
-            Assert.Equal("John Doe", player.Name);
-            Assert.Equal(3, player.Rank);
-            Assert.Equal("WR", player.Position);
-        }
-
     }
 }
